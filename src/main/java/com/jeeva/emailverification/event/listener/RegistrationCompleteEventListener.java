@@ -44,6 +44,8 @@ public class RegistrationCompleteEventListener
         String url = event.getApplicationUrl() + "/register/verifyEmail?token=" + verficationToken;
 
         //5. Send the verification email to the user
+
+
         try {
             sendVerificationEmail(url);
         } catch (MessagingException e) {
